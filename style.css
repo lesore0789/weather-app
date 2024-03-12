@@ -5,18 +5,24 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: yellow;
+  background: url(icons/bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .weather-container {
   position: relative;
   width: 400px;
-  height: 555px;
-  background: blue;
+  height: 600px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 16px;
   padding: 20px;
 }
@@ -43,8 +49,8 @@ body {
   border: 2px solid rgba(255, 255, 255, .2);
   outline: none;
   border-radius: 10px;
-  font-size: 22px;
-  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
   padding: 0 48px 0 42px;
 }
 
@@ -60,7 +66,6 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  stroke: #fff;
   padding: 0 40px 0 5px;
   cursor:pointer;
 }
@@ -68,4 +73,85 @@ body {
 
 .icon {
   width: 30px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 150px
+}
+
+.city{
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.weather-degrees {
+  font-weight: 700;
+  font-size: 70px;
+  position: relative;
+}
+
+.weather-degrees span{
+  position: absolute;
+  font-size: 45px;
+}
+
+.weather-description {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.high-low{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.more-info{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  grid-gap: 10px 100px;
+  padding-top: 40px;
+
+}
+
+.feels-like, .sunrise, .sunset, .humidity, .wind-speed {
+  display: flex;
+}
+
+.temp-icon {
+  width: 50px
+}
+
+.small-title, .sun-rise-set p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.bold-num {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sunrise .icon, .sunset .icon {
+  width: 25px;
+}
+
+.humidity .icon {
+  width:35px;
+}
+
+.humidity .box, .wind-speed .box, .sun-rise-set .box {
+  padding-left: 10px;
 }

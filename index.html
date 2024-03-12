@@ -5,55 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="weather-container">
     <div class="search">
       <img class="icon location-icon" src="icons/location.svg" alt="">
-      <input type="text" placeholder="location">
+      <input type="text" placeholder="enter your location">
       <button class="icon-button"><img class="icon" src="icons/search.svg" alt=""></button>
     </div>
 
-    <!--<div class="weather-info">
-      <img src="icons/sunny.svg" alt="">
+    <div class="weather-info">
+      <img class="weather-icon" src="icons/sunny3.svg" alt="">
       <h1 class="city">Houston</h1>
-      <h2 class="weather-degrees">80&deg;</h2>
+      <h2 class="weather-degrees">80<span>&deg;</span></h2>
       <h3 class="weather-description">Sunny</h3>
     </div>
-    <div class="highsandlows">
-      <p class="high">84&deg;</p>
-      <p class="low">72&deg;</p>
+    <div class="high-low">
+      <p class="high">H:84&deg;</p>
+      <p class="low">L:72&deg;</p>
     </div>
     <div class="more-info">
       <div class="feels-like">
-        <img src="icons/temperature.svg" alt="">
-        <h4 class="small-title">Feels Like</h4>
-        <p class="fl-temp">77&deg;</p>
+        <img class="temp-icon" src="icons/temperature.svg" alt="">
+        <div class="box">
+          <h4 class="small-title">Feels Like</h4>
+          <p class="bold-num">77&deg;</p>
+        </div>
       </div>
       <div class="sun-rise-set">
         <div class="sunrise">
-          <img src="icons/sunrise.svg" alt="">
-          <h4 class="small-title">sunrise</h4>
-          <p>6:37AM</p>
+          <img class="icon" src="icons/sunrise.svg" alt="">
+          <div class="box">
+            <h4 class="small-title">sunrise</h4>
+            <p>6:37AM</p>
+          </div>
         </div>
         <div class="sunset">
-          <img src="icons/sunset.svg" alt="">
-          <h4 class="small-title">sunset</h4>
-          <p>6:25PM</p>
+          <img class="icon" src="icons/sunset.svg" alt="">
+          <div class="box">
+            <h4 class="small-title">sunset</h4>
+            <p>6:25PM</p>
+          </div>
         </div>
       </div>
       <div class="humidity">
-        <img src="icons/humidity.svg" alt="">
-        <h4 class="small-title">humidity</h4>
-        <p>56%</p>
+        <img class="icon" src="icons/humidity.svg" alt="">
+        <div class="box">
+          <h4 class="small-title">humidity</h4>
+          <p class="bold-num">56%</p>
+        </div>
       </div>
       <div class="wind-speed">
-        <img src="icons/wind.svg" alt="">
-        <h4 class="small-title">wind speed</h4>
-        <p>7mph</p>
+        <img class="icon" src="icons/wind.svg" alt="">
+        <div class="box">
+          <h4 class="small-title">wind speed</h4>
+          <p class="bold-num">7mph</p>
+        </div>
       </div>
-    </div>-->
+    </div>
   </div>
 
 </body>
